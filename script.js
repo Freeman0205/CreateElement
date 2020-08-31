@@ -10,7 +10,7 @@ class Options {
     }
     div() {
         let elem = document.createElement('div');
-        document.body.appendChild(elem);
+        document.body.appendChild(elem);           //.appendChild will insert your element at the end of the body
         let param = `height:${this.height}px; width:${this.width}px; background-color:${this.bg}; font-size:${this.fontSize}px; text-align:${this.textAlign}`;
         elem.style.cssText = param;
         let whatText = prompt('Enter, what to write ?');
